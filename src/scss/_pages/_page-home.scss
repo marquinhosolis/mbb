@@ -1,0 +1,492 @@
+//@import "../global";
+
+.coverHomePage {
+    padding: 30px 0;
+    background: url(../images/lines-bg.png) no-repeat center center;
+    background-size: contain;
+    //background-size: 100% auto;
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    .coverHomeText {
+        h1 {
+            margin: 0;
+            margin-bottom: 10px;
+
+            @media (min-width: 1024px) {
+                font-size: 56px;
+            }
+        }
+        p {
+            margin: 0;
+            margin-bottom: 10px;
+            @media (min-width: 1024px) {
+                font-size: 18px;
+            }
+        }
+        @media (min-width: 768px) {
+            width: calc(50% - 20px);
+            margin: 20px;
+            max-width: 500px;
+        }
+    }
+
+    .coverHomeImage {
+        margin-top: 50px;
+        margin-bottom: 90px;
+        position: relative;
+        .coverHomeImageMain {
+            background: #ececec;
+            max-width: 65%;
+            margin: 20px auto;
+            border-radius: 40px;
+            box-shadow: -20px 20px 0px 0px #e2e1ff;
+            @include ratio(335, 415);
+            @media (min-width: 1200px) {
+                box-shadow: -30px 30px 0px 0px #e2e1ff;
+            }
+        }
+        .coverHomeImageAppend {
+            position: absolute;
+            width: 20%;
+            max-width: 100px;
+            img {
+                margin: 10px;
+            }
+            @media (min-width: 768px) {
+                width: calc(30% - 20px);
+            }
+        }
+        .coverHomeImageAppend1 {
+            right: 0;
+            bottom: 100%;
+            top: 40px;
+            left: 0;
+            transform: translate(20%, 100%);
+        }
+        .coverHomeImageAppend2 {
+            transform: translate(-50%, 50%);
+            right: 0;
+            bottom: 50%;
+
+            margin: auto;
+        }
+        .coverHomeImageAppend3 {
+            transform: translate(0, 50%);
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        @media (min-width: 768px) {
+            width: calc(50% - 20px);
+        }
+    }
+}
+
+.introHomePage--before {
+    display: block;
+    width: 100%;
+}
+
+.introHomePage {
+    background-color: #e0e4f0;
+    padding: 40px 0;
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-around;
+        }
+    }
+
+    .introHomePageCard {
+        position: relative;
+        padding: 30px;
+        margin: 20px 0;
+        margin-bottom: 40px;
+        box-shadow: 0 0 23px 1px rgba(115, 137, 174, 0.11);
+        border-radius: 30px;
+        background-color: #ffffff;
+        .pageTitle {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+        ul {
+            padding-left: 15px;
+        }
+        .introHomePageCardBtn {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translate(0, 50%);
+            text-align: center;
+            .btn {
+                transition: all linear 0.25s;
+                width: 70%;
+                padding: 7px 20px;
+                @media (min-width: 1100px) {
+                    white-space: nowrap;
+                    width: 0;
+                }
+            }
+            span {
+                //display: none;
+                width: 100%;
+                transition: all linear 0.25s;
+                display: inline-block;
+                overflow: hidden;
+                color: #373b45;
+                font-size: 15px;
+                font-weight: 400;
+                text-transform: uppercase;
+                @media (min-width: 1100px) {
+                    width: 0;
+                }
+            }
+        }
+        &:hover {
+            .btn {
+                width: 70%;
+                span {
+                    width: 70%;
+                }
+            }
+        }
+
+        &:nth-child(1) {
+            .btn {
+                background-color: #b2ddcc;
+            }
+        }
+        &:nth-child(2) {
+            .btn {
+                background-color: #60c6c2;
+            }
+        }
+        &:nth-child(3) {
+            .btn {
+                background-color: #8fa2c1;
+            }
+        }
+        @media (min-width: 768px) {
+            width: calc(33% - 20px);
+        }
+        @media (min-width: 1200px) {
+            width: calc(30% - 20px);
+        }
+    }
+}
+
+.ourServicesHomePage {
+    padding: 50px 0;
+    background: url(../images/lines-bg.png) no-repeat center center;
+    background-size: contain;
+    .ourServicesHomePageTitle {
+        margin-bottom: 80px;
+        .ourServicesHomePageTitleImage {
+            @include ratio(300, 150);
+            background-color: #ececec;
+            margin: 20px 10px;
+            border-radius: 40px;
+            box-shadow: -20px 20px 0px 0px #e2e1ff;
+            @media (min-width: 768px) {
+                width: calc(48% - 20px);
+                box-shadow: -30px 30px 0px 0px #e2e1ff;
+            }
+        }
+        .ourServicesHomePageTitleText {
+            margin: 20px auto;
+            color: #495061;
+            max-width: 460px;
+            .pageTitle {
+                margin-bottom: 15px;
+            }
+            p {
+                margin-top: 0;
+                a {
+                    color: #60c6c2;
+                    text-decoration: none;
+                }
+                @media (min-width: 1024px) {
+                    font-size: 18px;
+                }
+            }
+            @media (min-width: 768px) {
+                width: calc(48% - 20px);
+            }
+        }
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .ourServicesHomePageServices {
+        .ourServicesHomePageService {
+            max-width: 270px;
+            margin: 50px 10px;
+            img {
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+            h3 {
+                margin-top: 0;
+                margin-bottom: 10px;
+                color: #495061;
+                font-size: 28px;
+                font-weight: 400;
+                span {
+                    font-size: 15px;
+                    text-transform: uppercase;
+                }
+            }
+            p {
+                margin-top: 0;
+                font-size: 18px;
+                line-height: 2;
+            }
+            @media (min-width: 768px) {
+                width: calc(30% - 20px);
+            }
+        }
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+.ourServicesHomePageCtaBefore {
+    position: relative;
+    text-align: center;
+    .ourServicesHomePageCtaBeforeBtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        font-size: 20px;
+        transform: translate(0, 0);
+        @media (min-width: 768px) {
+            top: 20px;
+        }
+        @media (min-width: 1024px) {
+            top: 30px;
+            font-size: 24px;
+        }
+        @media (min-width: 1500px) {
+            top: 100px;
+        }
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.ourServicesHomePageCta {
+    background: #e0e4f0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ourServicesHomePageCtaImgClipPath {
+        width: 300px;
+        margin: auto;
+        img {
+            width: 100%;
+            mask: url(../images/mask.svg) no-repeat center center;
+            mask-size: contain;
+        }
+    }
+    .ourServicesHomePageCtaImgClipPath--desktop {
+        display: none;
+        @media (min-width: 1024px) {
+            display: inline-block;
+        }
+        &:first-child {
+            position: relative;
+            top: 0;
+            transform: translate(0, -80%);
+            img {
+                mask: url(../images/mask2.svg) no-repeat center center;
+                mask-size: contain;
+            }
+        }
+    }
+    .ourServicesHomePageCtaText {
+        position: relative;
+        text-align: center;
+        font-size: 24px;
+        p {
+            margin-bottom: 100px;
+            margin-top: 80px;
+            line-height: 1.8;
+            a {
+                color: #60c6c2;
+                text-decoration: none;
+            }
+        }
+        .ourServicesHomePageCtaImgClipPath {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            bottom: 0px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            transform: translate(0, 60%);
+        }
+        @media (min-width: 1024px) {
+            width: 50%;
+        }
+    }
+}
+
+.ourServicesHomePageCtaAfter {
+    display: block;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.homePageFreeGuide {
+    padding: 50px 0;
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    .homePageFreeGuideImage {
+        position: relative;
+        @include ratio(300, 150);
+        background-color: #ececec;
+        margin: 20px 10px;
+        border-radius: 40px;
+        box-shadow: -20px 20px 0px 0px #e2e1ff;
+        @media (min-width: 768px) {
+            width: calc(48% - 20px);
+            box-shadow: -30px 30px 0px 0px #e2e1ff;
+        }
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: url("../images/free-guide-after.png");
+            display: block;
+            width: 100%;
+            text-align: center;
+            transform: translate(0, 50%);
+        }
+    }
+    .homePageFreeGuideText {
+        max-width: 400px;
+        @media (min-width: 768px) {
+            width: calc(48% - 20px);
+        }
+        h2 {
+            margin-bottom: 0;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        fieldset {
+            padding: 0;
+            border: 0;
+            input {
+                margin-bottom: 10px;
+                width: 100%;
+                border: solid 1px #000;
+                padding: 7px 15px;
+                border-radius: 15px;
+                font-family: omnes-pro, sans-serif;
+                font-size: 18px;
+                &::placeholder {
+                    opacity: 1;
+                }
+            }
+            .btn {
+                font-family: omnes-pro, sans-serif;
+                width: 100%;
+                border: 0;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.homePageTestimonials {
+    background-color: #e0e4f0;
+    .homePageTestimonialsTitle {
+        text-align: center;
+        margin-bottom: 0;
+        h2 {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+    .homePageTestimonialsTitleCarousel {
+        position: relative;
+        top: 40px;
+        padding: 0 15px;
+        .flipster__button--prev,
+        .flipster__button--next {
+            font-size: 36px;
+            margin: 0;
+        }
+        .homePageTestimonialsUnique {
+            max-width: 300px;
+            background: #fff;
+            border-radius: 40px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 23px 1px rgba(115, 137, 174, 0.26);
+            padding: 50px 40px;
+            .homePageTestimonialsUniqueImage {
+                max-width: 180px;
+                width: 60%;
+                margin: 15px auto;
+                mask: url(../images/mask2.svg) no-repeat center center;
+                mask-size: contain;
+                @include ratio(1, 1);
+            }
+            .homePageTestimonialsUniqueText {
+                padding: 0 10px;
+                color: #495061;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.8;
+                .homePageTestimonialsUniqueTextName {
+                    margin-top: 10px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+.homeFooterCta {
+    padding-bottom: 100px;
+    padding-top: 150px;
+
+    background: url(../images/footer-cta-bg.png) no-repeat center bottom;
+    background-size: auto;
+    background-size: 100%;
+    text-align: center;
+    .btn {
+        font-size: 24px;
+    }
+}

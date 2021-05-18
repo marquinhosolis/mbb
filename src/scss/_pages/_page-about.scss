@@ -1,0 +1,378 @@
+.aboutUsCover {
+    padding: 30px 0;
+    background: url(../images/lines-bg.png) no-repeat center center;
+    background-size: contain;
+    .container {
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+    .aboutCoverImages {
+        display: none;
+        img {
+            max-width: 90px;
+        }
+        .aboutCoverImage1,
+        .aboutCoverImage7 {
+            overflow: hidden;
+            @include ratio(1, 1);
+            width: 60%;
+            max-width: 150px;
+            mask: url(../images/mask2.svg) no-repeat center center;
+            mask-size: contain;
+        }
+        .aboutCoverImage1 {
+            margin: auto;
+        }
+        .aboutCoverImage3 {
+            text-align: right;
+        }
+        .aboutCoverImage4 {
+            text-align: center;
+        }
+        .aboutCoverImage5 {
+            text-align: right;
+        }
+        @media (min-width: 1024px) {
+            margin: 0 15px;
+            display: block;
+            width: calc(22% - 30px);
+        }
+    }
+    .aboutCoverText {
+        text-align: center;
+        .aboutCoverTextRow {
+            margin-bottom: 50px;
+            p {
+                font-size: 18px;
+            }
+            ul {
+                padding: 0;
+                list-style: none;
+                text-align: left;
+                font-size: 18px;
+                overflow: auto;
+                li {
+                    &:before {
+                        content: "";
+                        display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        margin-right: 5px;
+                        border-radius: 20px;
+                        background-color: #8fa2c1;
+                        vertical-align: middle;
+                    }
+                    @media (min-width: 768px) {
+                        width: 50%;
+                        float: left;
+                        margin: 0 5px;
+                        display: block;
+                        width: calc(50% - 30px);
+                        &:nth-child(odd) {
+                            text-align: right;
+                            &:before {
+                                display: none;
+                            }
+                            &:after {
+                                content: "";
+                                display: inline-block;
+                                width: 5px;
+                                height: 5px;
+                                margin-left: 5px;
+                                border-radius: 20px;
+                                background-color: #8fa2c1;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (min-width: 1024px) {
+            margin: 0 15px;
+            display: block;
+            width: calc(55% - 30px);
+        }
+    }
+}
+
+.aboutWellness {
+    background-color: #e0e4f0;
+    padding: 30px 0;
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .aboutWellnessImage {
+        @include ratio(1, 1);
+        border-radius: 100%;
+
+        @media (max-width: 767px) {
+            width: 80%;
+            margin: auto;
+        }
+        @media (min-width: 768px) {
+            width: 25%;
+        }
+    }
+    .aboutWellnessCopy {
+        position: relative;
+        padding: 30px;
+        box-shadow: 0 0 23px 1px rgba(115, 137, 174, 0.11);
+        border-radius: 30px;
+        background-color: #ffffff;
+
+        .pageTitle {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+
+        @media (max-width: 767px) {
+            top: -50px;
+        }
+
+        @media (min-width: 768px) {
+            left: -50px;
+            width: 70%;
+            max-width: 550px;
+        }
+    }
+}
+
+.ourServicesAboutPage {
+    .ourServicesHomePageServices .ourServicesHomePageService {
+        max-width: 350px;
+        margin: 50px 10px;
+    }
+    h4 {
+        font-weight: normal;
+        font-size: 24px;
+        text-align: center;
+        max-width: 430px;
+        margin: 30px auto;
+        a {
+            color: #60c6c2;
+            text-decoration: none;
+        }
+    }
+}
+
+.aboutTechnology {
+    padding-bottom: 80px;
+    .aboutTechnologyTitle {
+        max-width: 500px;
+        margin: auto;
+        //margin-bottom: 50px;
+        text-align: center;
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-top: 0;
+        }
+    }
+    .aboutTechnologyWrapper {
+        .slider {
+            ul {
+                li {
+                    @media (min-width: 768px) {
+                        margin: 0 10px;
+                        width: calc(30% - 20px);
+                    }
+                    @media (min-width: 1024px) {
+                        margin: 0 30px;
+                        width: calc(30% - 60px);
+                    }
+                }
+                @media (min-width: 768px) {
+                    max-width: 900px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        .aboutTechnologyUnique {
+            padding: 0 50px;
+            .aboutTechnologyUniqueImage {
+                width: 100%;
+                @include ratio(1, 1);
+                margin: 20px auto;
+                mask: url(../images/mask2.svg) no-repeat center center;
+                mask-size: contain;
+            }
+            .aboutTechnologyUniqueText {
+                font-size: 24px;
+                text-align: center;
+                span {
+                    display: block;
+                    font-size: 14px;
+                }
+            }
+            @media (min-width: 768px) {
+                padding: 0;
+            }
+        }
+    }
+    .flex-direction-nav a {
+        height: 25px;
+    }
+    .flex-direction-nav a:before {
+        content: "\f104";
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 24px;
+    }
+    .flex-direction-nav a.flex-next:before {
+        content: "\f105";
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 24px;
+    }
+}
+
+.homeFacility {
+    .aboutFacilityTitle {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .aboutFacilityVideoThumb {
+        @include ratio(320, 255);
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            @include ratio(1400, 435);
+        }
+    }
+    .aboutFacilityVideoModal {
+        display: none;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .aboutFacilityVideoModalMask {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .aboutFacilityVideoModalBody {
+            @include ratio(16, 9);
+            width: 100%;
+            margin: 20px;
+            max-width: 800px;
+            background: #fff;
+            iframe {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+    }
+}
+
+.ourServicesAboutPageCta {
+    .ourServicesHomePageCtaImgClipPath--desktop {
+        &:first-child {
+            transform: translate(0, 0);
+        }
+    }
+    .ourServicesHomePageCtaText {
+        p {
+            .btn {
+                color: inherit;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.aboutTeam {
+    .aboutTeamTitle {
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .aboutTeamWrapper {
+        h3 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #373b45;
+            width: 100%;
+            text-align: center;
+            &:after {
+                content: "";
+                vertical-align: middle;
+                margin-left: 10px;
+                display: inline-block;
+                width: 40px;
+                height: 2px;
+                background: #60c6c2;
+            }
+            @media (min-width: 768px) {
+                text-align: left;
+            }
+        }
+        .slider {
+            margin-bottom: 80px;
+        }
+        ul {
+            li {
+                @media (min-width: 768px) {
+                    width: 25%;
+                }
+            }
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+        }
+        .aboutTeamMember {
+            max-width: 220px;
+            margin: auto;
+            text-align: center;
+            .aboutTeamMemberImage {
+                @include ratio(1, 1);
+                margin-bottom: 15px;
+                border-radius: 50%;
+            }
+            .aboutTeamMemberText {
+                font-style: italic;
+                text-transform: uppercase;
+                strong {
+                    display: block;
+                    font-weight: bold;
+                    font-style: normal;
+                }
+            }
+        }
+        .flex-direction-nav a {
+            height: 25px;
+        }
+        .flex-direction-nav a:before {
+            content: "\f104";
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 24px;
+        }
+        .flex-direction-nav a.flex-next:before {
+            content: "\f105";
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 24px;
+        }
+    }
+}

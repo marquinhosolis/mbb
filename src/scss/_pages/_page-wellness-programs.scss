@@ -1,0 +1,113 @@
+.programsIntro {
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.programsIntroUnique {
+    margin: 30px;
+    .programsIntroUniqueImage {
+        margin: 30px 15px;
+        position: relative;
+        .programsIntroUniqueImageMain {
+            background: #ececec;
+            width: 100%;
+            border-radius: 40px;
+            box-shadow: -20px 20px 0px 0px #e2e1ff;
+            @include ratio(335, 415);
+        }
+        .programsIntroUniqueImageAppend {
+            position: absolute;
+            width: 30%;
+            max-width: 100px;
+        }
+        .programsIntroUniqueImageAppend1 {
+            right: 0;
+            top: -20px;
+        }
+        @media (max-width: 1023px) {
+            margin: 30px 50px;
+        }
+        @media (min-width: 1024px) {
+            width: calc(50% - 30px);
+        }
+    }
+    .programsIntroUniqueText {
+        margin: 15px;
+        h2 {
+            margin-bottom: 10px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        p {
+            margin-top: 0;
+        }
+        @media (min-width: 1024px) {
+            width: calc(50% - 30px);
+        }
+    }
+    @media (min-width: 1024px) {
+        max-width: 500px;
+        width: calc(50% - 60px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.wellnessProgramsAll {
+    background-color: #e0e4f0;
+    padding: 40px 0;
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+
+    .wellnessProgramsAllCard {
+        .wellnessProgramsAllCardBefore {
+            @include ratio(2, 1);
+            width: 80%;
+            margin: auto;
+            mask: url(../images/half-circle.svg) no-repeat center center;
+            mask-size: contain;
+        }
+        .wellnessProgramsAllCardWrapper {
+            padding: 30px;
+            //margin: 20px 0;
+            margin-bottom: 40px;
+            box-shadow: 0 0 23px 1px rgba(115, 137, 174, 0.11);
+            border-radius: 30px;
+            background-color: #ffffff;
+            .pageTitle {
+                margin: 0;
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            width: calc(33% - 20px);
+        }
+        @media (min-width: 1200px) {
+            width: calc(30% - 20px);
+        }
+    }
+}
+
+.ourServicesProgramsCtaBeforeBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 20px;
+    transform: translate(0, 0);
+}

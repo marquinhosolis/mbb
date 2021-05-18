@@ -1,0 +1,80 @@
+.blogShowcase {
+    padding: 100px 0;
+    .blogShowcaseArticles {
+        margin-bottom: 30px;
+        a {
+            display: block;
+            margin: 15px;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            article {
+                .blogShowcaseArticleThumb {
+                    @include ratio(350, 270);
+                    border-radius: 40px;
+                }
+                .blogShowcaseArticleText {
+                    position: relative;
+                    top: -30px;
+                    width: 90%;
+                    margin: auto;
+                    border-radius: 20px;
+                    padding: 20px;
+                    background-color: #dfe3ee;
+
+                    h3 {
+                        margin: 0;
+                        font-size: 18px;
+                        line-height: 1.5;
+                        @media (min-width: 1024px) {
+                            font-size: 24px;
+                        }
+                    }
+                    .blogShowcaseArticleTitleDate {
+                        color: #495061;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 29px;
+                        /* Text style for "03.18.2020" */
+                        letter-spacing: 0.7px;
+                    }
+                    p {
+                        margin: 0;
+                        margin-bottom: 15px;
+
+                        color: #495061;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 29px;
+                        /* Text style for "Lorem ipsu" */
+                        letter-spacing: 0.75px;
+                    }
+                    .blogShowcaseReadMore {
+                        color: #495061;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 29px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.7px;
+
+                        i {
+                            color: #60c6c2;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+            @media (min-width: 768px) {
+                width: calc(33% - 30px);
+            }
+        }
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+    }
+    .blogShowcaseBtn {
+        text-align: center;
+    }
+}

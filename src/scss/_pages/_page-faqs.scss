@@ -1,0 +1,76 @@
+.faqsPage {
+    padding-bottom: 50px;
+    background: url(../images/lines-bg.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.faqsShowcaseArticles {
+    padding: 50px 0;
+}
+
+.faqsUnique {
+    transition: all linear 0.2s;
+    position: relative;
+    display: block;
+    max-width: 850px;
+    margin: auto;
+    padding: 10px 30px;
+    padding-right: 50px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    border: solid 1px #000;
+    color: #495061;
+    font-size: 14px;
+    text-decoration: none;
+    h3 {
+        margin-bottom: 0;
+        font-weight: bolder;
+        font-size: 16px;
+    }
+    p {
+        margin-top: 0;
+    }
+
+    .faqAnswerFull {
+        display: none;
+    }
+
+    &:after {
+        transition: all linear 0.2s;
+        content: "\f107";
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+        font: normal normal normal 14px/1 FontAwesome;
+        color: #b2ddcc;
+        font-size: 32px;
+        pointer-events: none;
+    }
+}
+
+.faqsUnique--opened {
+    .faqAnswerFull {
+        display: block;
+    }
+    .faqAnswerIntro {
+        display: none;
+    }
+    &:after {
+        rotate: (180deg);
+    }
+}
+
+.faqsPagination {
+    text-align: center;
+    span,
+    a {
+        margin: 0 2px;
+        color: #495061;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    span {
+        color: #60c6c2;
+    }
+}

@@ -1,0 +1,160 @@
+.schedulePage {
+    padding: 50px 0;
+    background: url(../images/lines-bg.png) no-repeat center center;
+    background-size: contain;
+    section {
+        @media (min-width: 768px) {
+            margin-bottom: 80px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+}
+
+.schedulePageTitle {
+    h1 {
+        font-size: 28px;
+        margin-top: 0;
+        @media (min-width: 1024px) {
+            font-size: 36px;
+        }
+    }
+    @media (min-width: 768px) {
+        margin: 0 15px;
+        max-width: 600px;
+        width: calc(50% - 30px);
+    }
+}
+
+.schedulePageForm {
+    fieldset {
+        padding: 0;
+        border: 0;
+    }
+    form {
+        @media (min-width: 768px) {
+            max-width: 70%;
+            margin: auto;
+        }
+    }
+    input,
+    select,
+    textarea {
+        width: 100%;
+
+        border-radius: 20px;
+        border: solid 1px #000;
+        padding: 8px 15px;
+        margin-bottom: 15px;
+        font-family: omnes-pro, sans-serif;
+        color: #373b45;
+        font-weight: 400;
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+    select {
+        appearance: none;
+    }
+    p {
+        margin-top: 0;
+    }
+    .selectWrapper {
+        position: relative;
+
+        &:after {
+            content: "\f107";
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            font: normal normal normal 14px/1 FontAwesome;
+            pointer-events: none;
+        }
+        @media (min-width: 768px) {
+            width: 50%;
+            float: left;
+        }
+    }
+    .btn {
+        border: 0;
+        padding: 7px 30px;
+        border-radius: 20px;
+        background-color: #b2ddcc;
+        color: #373b45;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    @media (min-width: 768px) {
+        margin: 0 15px;
+        max-width: 600px;
+        width: calc(60% - 30px);
+    }
+}
+
+.schedulePageImage {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    position: relative;
+    .schedulePageImageMain {
+        background: #ececec;
+        max-width: 100%;
+        //margin: auto;
+        border-radius: 40px;
+        box-shadow: -20px 20px 0px 0px #e2e1ff;
+        @include ratio(430, 220);
+    }
+    .schedulePageImageAppend {
+        position: absolute;
+        width: 20%;
+        max-width: 100px;
+        img {
+            margin: 10px;
+        }
+    }
+    .schedulePageImageAppend1 {
+        right: 0;
+        bottom: 100%;
+        top: 40px;
+        left: 0;
+        transform: translate(-50%, 100%);
+    }
+    .schedulePageImageAppend2 {
+        transform: translate(40%, 50%);
+        right: 0;
+        bottom: 50%;
+        margin: auto;
+    }
+    .schedulePageImageAppend3 {
+        transform: translate(0, 50%);
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    @media (min-width: 768px) {
+        margin: 0 15px;
+        width: calc(45% - 50px);
+    }
+}
+
+.schedulePageMap {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    position: relative;
+    .schedulePageIframeWrapper {
+        border-radius: 45px;
+        overflow: hidden;
+        box-shadow: -20px 20px 0px 0px #e2e1ff;
+        iframe {
+            width: 100% !important;
+            height: 300px;
+        }
+    }
+    @media (min-width: 768px) {
+        margin: 0 15px;
+        width: calc(45% - 50px);
+    }
+}

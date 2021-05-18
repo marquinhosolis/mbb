@@ -1,0 +1,141 @@
+.singlePost {
+    padding: 50px 0;
+    .container {
+        padding: 0;
+        @media (min-width: 768px) {
+            padding: 0 25px;
+        }
+    }
+    .singlePostWrapper {
+        padding: 0 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 0 23px 1px rgba(115, 137, 174, 0.26);
+        border-radius: 45px 45px 0 0;
+        background-color: hsl(224, 31%, 90%);
+        line-height: 29px;
+        letter-spacing: 0.75px;
+        a {
+            color: #60c6c2;
+        }
+        h1 {
+            margin-bottom: 15px;
+        }
+        .singlePostImage {
+            @include ratio(568, 440);
+            position: relative;
+            left: -25px;
+            width: calc(100% + 50px);
+            border-radius: 45px;
+            @media (min-width: 768px) {
+                width: 50%;
+                float: left;
+                left: -50px;
+                top: -50px;
+            }
+        }
+        .singlePostImageDate {
+            span {
+                color: #60c6c2;
+            }
+            ul {
+                display: inline-block;
+                padding: 0;
+                list-style: none;
+                margin: 0;
+                margin-bottom: 20px;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            padding: 40px 20px;
+            border-radius: 45px;
+            margin: 25px;
+        }
+    }
+    .postAfter {
+        margin: 25px;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .postBack {
+        display: none;
+        color: #373b45;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18.95px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        letter-spacing: 0.71px;
+        text-align: center;
+        i {
+            margin-right: 5px;
+            color: #60c6c2;
+        }
+        a {
+            transition: all ease 0.25s;
+            display: block;
+            text-decoration: none;
+            color: #373b45;
+            &:hover {
+                color: #60c6c2;
+            }
+        }
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+    .postNav {
+        text-align: center;
+        .postPrevious,
+        .postNext {
+            border-radius: 20px;
+            overflow: hidden;
+            display: inline-block;
+            background-size: cover;
+            background-position: center center;
+
+            a {
+                padding: 10px 30px;
+                display: block;
+                width: 100%;
+                background-color: rgba(#60c6c2, 0.8);
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        .postPrevious {
+            i {
+                margin-right: 5px;
+            }
+        }
+        .postNext {
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+    .postShare {
+        text-align: center;
+        margin-bottom: 15px;
+        color: #8fa2c1;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        a {
+            margin: 0 2px;
+            transition: all ease 0.25s;
+            display: inline-block;
+            color: inherit;
+            &:hover {
+                color: #60c6c2;
+            }
+        }
+    }
+}
